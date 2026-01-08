@@ -1,1 +1,5 @@
+export * from './divisao'
 export * from './exercicio'
+export * from './exercicio-divisao'
+export * from './treino'
+export * from './usuario'
