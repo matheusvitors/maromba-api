@@ -3,7 +3,9 @@ export interface ExercicioDivisao {
 	exercicioId: string;
 	divisaoId: string;
 	ordem: number;
-	peso: number;
 	series: number;
-	repeticoes: number;
+	repeticoes: {
+		minimo: number;
+		maximo: number;
+	};
 }
