@@ -1,3 +1,5 @@
+import { FichaTreino } from "@/core/models/ficha-treino";
+
 export interface ExercicioDivisao {
 	id: string;
 	exercicioId: string;
@@ -8,4 +10,5 @@ export interface ExercicioDivisao {
 		minimo: number;
 		maximo: number;
 	};
+	fichasTreino: FichaTreino[];
 }

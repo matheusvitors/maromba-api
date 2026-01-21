@@ -1,10 +1,15 @@
 export interface ExecucaoExercicio {
 	id: string;
-	exercicioDiivsaoId: string;
 	exercicioId: string;
-	series: number;
-	repeticoes: number;
+	fichaTreinoId: string;
+	exercicioDiivsaoId: string;
+	series: {
+		numeroSeries: number;
+		repeticoes: number;
+		pesoCustomizado?: number;
+	};
 	peso: number;
 	dificuldade: number;
+	avaliacaoExecucao: number;
 	comentario: string;
 }
